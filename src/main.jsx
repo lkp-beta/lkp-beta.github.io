@@ -4,19 +4,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './index.css';
 import Page from './Page';
 
-import {
-  About,
-  Bands,
-  Contact,
-  Home,
-  Specialty,
-  Weddings,
-  Top,
-  Classical,
-  Jazz,
-  World,
-  Swing,
-} from './routes';
+import { About, Bands, Contact, Home, Specialty, Weddings } from './routes';
+import { Top, Classical, Jazz, World, Swing } from './routes/bands/index.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

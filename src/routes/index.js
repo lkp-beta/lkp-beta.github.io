@@ -4,8 +4,3 @@ export { default as Contact } from './Contact';
 export { default as Home } from './Home';
 export { default as Specialty } from './Specialty';
 export { default as Weddings } from './Weddings';
-export { default as Top } from './Top';
-export { default as Classical } from './Classical';
-export { default as Jazz } from './Jazz';
-export { default as World } from './World';
-export { default as Swing } from './Swing';
