@@ -8,6 +8,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
     'plugin:react/jsx-runtime',
     'plugin:jsx-a11y/recommended',
   ],
@@ -19,7 +20,9 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', 'jsx-a11y'],
-  rules: {},
+  rules: {
+    'react/prop-types': 'off',
+  },
   settings: {
     react: {
       version: 'detect',
