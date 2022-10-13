@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './index.css';
 import Page from './Page';
 
-import { About, Bands, Contact, Home, Specialty, Weddings } from './routes';
+import { About, Bands, Contact, Home, Specialty, Testimonials, Weddings } from './routes';
 import { Top, Classical, Jazz, World, Swing } from './routes/bands/index.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -17,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="bands-orchestras" element={<Bands />} />
           <Route path="specialty-entertainment" element={<Specialty />} />
           <Route path="weddings" element={<Weddings />} />
+          <Route path="testimonials" element={<Testimonials />} />
           <Route path="contact" element={<Contact />} />
           <Route path="top-40s" element={<Top />} />
           <Route path="classical" element={<Classical />} />

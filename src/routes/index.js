@@ -4,3 +4,4 @@ export { default as Contact } from './Contact';
 export { default as Home } from './Home';
 export { default as Specialty } from './Specialty';
 export { default as Weddings } from './Weddings';
+export { default as Testimonials } from './Testimonials';
