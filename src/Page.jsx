@@ -1,5 +1,8 @@
-import { NavLink, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import sidebarFade from '/images/sidebarFade.jpg';
+import navHeadshot from '/images/nav-headshot.jpeg';
+import weddingCouple from '/images/wedding-couple.jpg';
+import { NavItem } from './NavItem';
 
 const bandOrchSubPaths = ['bands-orchestras', 'top-40s', 'classical', 'jazz', 'world', 'swing'];
 
@@ -12,8 +15,8 @@ export default function Page({ children }) {
           <a href="/" tabIndex="-1">
             LARRY KING PRODUCTIONS
           </a>
-          <img alt="tbd" />
-          <img alt="tbd" />
+          <img alt="" src={navHeadshot} />
+          <img alt="" src={weddingCouple} />
         </div>
         <p>New York&#39;s Music and Entertainment Resource for Great Parties and Special Events</p>
       </header>
@@ -59,10 +62,10 @@ export default function Page({ children }) {
               <div className="squiggle" />
               <footer>
                 <h2>LARRY KING PRODUCTIONS</h2>
-                <span>
+                <p className="rose">
                   New York&apos;s Music and Entertainment Resource for Great Parties and Special
                   Events
-                </span>
+                </p>
                 255 West 23rd Street, Suite #2C-W
                 <br /> New York, New York 10011
                 <a href="tel:+12126273282">tel (212) 627-3282</a>
@@ -76,14 +79,3 @@ export default function Page({ children }) {
     </>
   );
 }
-
-const NavItem = ({ title, to }) => (
-  <li>
-    <NavLink
-      to={`/${to ?? title.toLowerCase()}`}
-      className={({ isActive }) => (isActive ? 'active' : undefined)}
-    >
-      {title}
-    </NavLink>
-  </li>
-);
