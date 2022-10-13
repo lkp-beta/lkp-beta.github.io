@@ -68,9 +68,9 @@ export default function Page({ children }) {
                 </p>
                 255 West 23rd Street, Suite #2C-W
                 <br /> New York, New York 10011
-                <a href="tel:+12126273282">tel (212) 627-3282</a>
-                <a href="mailto:Info@LarryKingMusicNY.com">Info@LarryKingMusicNY.com</a>
-                <a href="http://www.larrykingmusicny.com">www.larrykingmusicny.com</a>
+                <a href="tel:+12126273282">+1 212 627 3282</a>
+                <a href="mailto:LKingMusic@aol.com">LKingMusic@aol.com</a>
+                <a href="http://www.larrykingmusicny.com">www.LarryKingMusicNY.com</a>
               </footer>
             </>
           )}
