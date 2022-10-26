@@ -1,14 +1,28 @@
 @font-face {
-  font-family: 'Canter Bold';
-  src: url('/Canter\ Bold.woff2') format('woff2');
+  font-family: "Canter Bold";
+  src: url("/Canter\ Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Radiant";
+  src: url("/Radiant.woff2") format("woff2");
 }
 body {
-  margin: 0px;
+  width: 100%;
+  margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #34342d;
+  min-width: 375px;
 }
-
+.main {
+  max-width: 880px;
+  margin: auto;
+}
+img {
+  width: 100%;
+  height: auto;
+}
 * {
   font-family: Verdana, Arial, Helvetica, sans-serif;
 }
@@ -41,42 +55,71 @@ header {
   background-color: #34342d;
   margin: 0;
 }
-header a {
+.masthead {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.mastheadImages {
+  display: flex;
+  width: 100%;
+  max-width: 250px;
+}
+header h1 {
+  font-family: "Radiant", "Canter Bold", "Lucida Grande", Verdana, sans-serif;
   font-size: 36px;
   color: #d9d9cb;
-  font-family: 'Canter Bold', 'Lucida Grande', Verdana, sans-serif;
+  margin: 0 0 20px 0;
+  padding: 0;
+  text-align: center;
 }
-header > p {
+header a {
+  margin-top: 30px;
+}
+header p {
   color: whitesmoke;
-  font-size: 7px;
+  font-size: clamp(8px, 1.5vw, 11px);
   font-weight: bold;
   border-top: 1px solid #808080;
   background-color: #464640;
   margin: 0;
+  text-align: center;
+  line-height: 1.5em;
 }
 .page {
   display: flex;
   background-color: white;
 }
+.mainContent {
+  width: 100%;
+}
 nav {
   background-color: white;
   max-width: 200px;
-  /* height: ; */
 }
-nav ul {
+nav > ul {
   background-color: #643241;
   margin: 0;
+  padding: 8px 0 60px 20px;
 }
 nav ul li {
   list-style: none;
 }
 nav ul li a {
   color: white;
-  font-size: 8px;
+  font-size: clamp(9.5px, 1.5vw, 12px);
   font-weight: bold;
 }
+nav a:hover {
+  text-shadow: 0px 0px 2px white;
+}
+.active {
+  text-shadow: 0px 0px 2px white;
+}
 nav ul ul {
-  padding-left: 20px;
+  padding-left: 14px;
+  padding-top: 0;
+  margin-right: 4px;
 }
 nav ul ul li {
   /* list-style-type: disc; */
@@ -85,12 +128,18 @@ nav ul ul li {
 nav .testimonials {
   color: #ffffca;
   background-color: #643241;
+  padding: 0 20px 40px 20px;
+}
+nav .testimonials strong {
+  font-size: 13px;
+  font-style: italic;
 }
 nav .testimonials p {
   color: #ffffca;
   font-size: 12px;
   font-style: italic;
   margin: 0;
+  padding: 18px 0;
 }
 
 nav .testimonials a {
@@ -105,8 +154,27 @@ section {
   background-color: white;
   /* width: 100%; */
 }
+main {
+  margin-bottom: 40px;
+}
+footer {
+  padding: 20px;
+}
 footer * {
   display: block;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5em;
+}
+footer h2 {
+  font-size: 11px;
+  font-weight: bold;
+  color: #6b2f40;
+}
+footer h6 {
+  color: #6b2f40;
+  font-weight: normal;
+  font-size: 10px;
 }
 .squiggle {
   width: 100%;
@@ -132,23 +200,100 @@ footer * {
 
 .home {
   display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 .home ul li {
   list-style-type: none;
 }
-.home a {
-  text-decoration: underline;
+.home ul {
+  padding: 0 10px;
+}
+.home ul ul {
+  padding-left: 10px;
 }
 .home a:hover,
 footer a:hover {
   color: #6b2f40;
 }
-.about section {
-  /* display: flex; */
+.home img {
+  max-width: 200px;
 }
-.about > p {
-  /* word-wrap: normal; */
+.about section {
+  margin: 20px;
+  display: flex;
+  gap: 10px;
+}
+.about img {
+  max-width: 400px;
+  width: 60%;
+  height: 60%;
+}
+@media only screen and (max-width: 600px) {
+  .about section {
+    flex-direction: column;
+  }
+  .about img {
+    width: 100%;
+  }
+  .weddingSplit {
+    flex-direction: column-reverse;
+  }
+  .weddingSplit img {
+    width: 100%;
+    margin: auto;
+  }
+}
+.about h5 {
+  margin-left: 20px;
+}
+.about p {
+  word-wrap: normal;
+  padding: 0;
+  margin: 0;
+  font-size: clamp(12px, 1.5vw, 18px);
+  line-height: 1.25em;
+}
+.about span {
+  white-space: nowrap;
+}
+.about ul {
+  padding: 0;
+  margin: 0;
+}
+.about li {
+  list-style: none;
+}
+.servicesInclude {
+  list-style: none;
+  padding: 0;
+}
+.specialty p {
+  font-size: clamp(11px, 2vw, 18px);
+  line-height: 1.3em;
+}
+.weddings p {
+  font-size: clamp(12px, 1.5vw, 18px);
+  line-height: 1.25em;
+}
+.weddingSplit {
+  display: flex;
+}
+.weddingSplit img {
+  width: 45%;
+  height: auto;
+}
+.contact section * {
+  margin: 0;
+  font-size: clamp(12px, 1.5vw, 18px);
+  line-height: 1.25em;
+}
+.contact h2 {
+  font-weight: bold;
+  color: #6b2f40;
+  margin-left: 20px;
 }
 .name {
   font-weight: bold;

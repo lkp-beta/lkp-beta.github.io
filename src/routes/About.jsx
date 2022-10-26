@@ -1,5 +1,5 @@
-import grandPiano from '/images/grand-piano.jpg';
-import headshot from '/images/home-headshot.jpeg';
+import grandPiano from "/images/grand-piano.jpg";
+import headshot from "/images/home-headshot.jpeg";
 
 export default function About() {
   return (
@@ -16,49 +16,49 @@ export default function About() {
       </section>
       <div className="squiggle" />
       <div className="squiggle" />
+      <h5>Services</h5>
       <section>
-        <h5>Services</h5>
-        {servicesList.map(createItem)}
+        <ul>{servicesList.map(createItem)}</ul>
+        <img alt="" src={grandPiano} />
       </section>
-      <img alt="" src={grandPiano} />
       <div className="squiggle" />
       <div className="squiggle" />
+      <h5>Clients</h5>
       <section>
-        <h5>Clients</h5>
-        {clientsList.map(createItem)}
+        <ul>{clientsList.map(createItem)}</ul>
       </section>
     </main>
   );
 }
 
 function createItem(el) {
-  return <p key={el}>{el}</p>;
+  return <li key={el}>{el}</li>;
 }
 
 const servicesList = [
-  'Bands and Orchestras',
-  'Classical Groups',
-  'Jazz Bands',
-  'String Trios and Quartets',
-  'Pianists and Harpists',
-  'Latin, Salsa and Meringue',
-  'Klezmer',
-  'Musical Revues',
-  'Comedy Acts',
-  'Theme Parties',
-  'Celebrity Speakers',
-  'DJs',
-  'Karaoke',
-  'Casinos and Other Games/Activities',
-  'Dancers',
+  "Bands and Orchestras",
+  "Classical Groups",
+  "Jazz Bands",
+  "String Trios and Quartets",
+  "Pianists and Harpists",
+  "Latin, Salsa and Meringue",
+  "Klezmer",
+  "Musical Revues",
+  "Comedy Acts",
+  "Theme Parties",
+  "Celebrity Speakers",
+  "DJs",
+  "Karaoke",
+  "Casinos and Other Games/Activities",
+  "Dancers",
 ];
 
 const clientsList = [
-  'Calvin Klein Cosmetics',
-  'CBS News',
-  'Hertz Corporation',
-  'JP Morgan Chase',
-  'NYU Stern School of Business',
-  'Pfizer Pharmaceuticals',
-  'The Real Estate Board of NY',
+  "Calvin Klein Cosmetics",
+  "CBS News",
+  "Hertz Corporation",
+  "JP Morgan Chase",
+  "NYU Stern School of Business",
+  "Pfizer Pharmaceuticals",
+  "The Real Estate Board of NY",
 ];

@@ -1,9 +1,9 @@
-import weddingCollage from '/images/wedding-collage.jpg';
-import weddingInstruments from '/images/wedding-instruments.jpg';
+import weddingCollage from "/images/wedding-collage.jpg";
+import weddingInstruments from "/images/wedding-instruments.jpg";
 
 export default function Weddings() {
   return (
-    <main>
+    <main className="weddings">
       <h1>Weddings</h1>
       <img alt="" src={weddingCollage} />
       <section>
@@ -15,7 +15,7 @@ export default function Weddings() {
           and worldwide.
         </p>
         <p>
-          <span>THE LARRY KING ORCHESTRA</span> and our <span>SWINGOUTNY</span> and{' '}
+          <span>THE LARRY KING ORCHESTRA</span> and our <span>SWINGOUTNY</span> and{" "}
           <span>DOWNTOWN</span> bands are ideally suited for wedding receptions that require a wide
           range of the most popular dance music from classic rock and pop to contemporary, swing and
           big band to R&B, Motown to 70s Disco, Jazz and way beyond. We are experts at guiding you
@@ -27,7 +27,7 @@ export default function Weddings() {
           name it, we can produce it and make it happen for you. Our premium classical and jazz
           performers are ready to perform any ceremony and cocktail reception music you will want.
         </p>
-        <div style={{ display: 'flex' }}>
+        <div className="weddingSplit">
           <p>
             We are known for our elegant and professional standards and outstanding personal
             service. As a boutique music agency with a discerning clientele, we have the proven

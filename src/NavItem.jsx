@@ -1,10 +1,10 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 export const NavItem = ({ title, to }) => (
   <li>
     <NavLink
       to={`/${to ?? title.toLowerCase()}`}
-      className={({ isActive }) => (isActive ? 'active' : undefined)}
+      className={({ isActive }) => (isActive && to !== "" ? "active" : undefined)}
     >
       {title}
     </NavLink>
