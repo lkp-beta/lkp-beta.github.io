@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import sidebarFade from "/images/sidebarFade.jpg";
+import sidebarFade from "/images/sidebarfade.jpg";
 import navHeadshot from "/images/nav-headshot.jpeg";
 import weddingCouple from "/images/wedding-couple.jpg";
 import { NavItem } from "./NavItem";
