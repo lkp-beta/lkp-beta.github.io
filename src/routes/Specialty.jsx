@@ -1,4 +1,4 @@
-import specialCollage from "/images/specialty-entertain-collage.jpg";
+import specialCollage from '/images/specialty-entertain-collage.jpg';
 
 export default function Specialty() {
   return (
@@ -12,7 +12,7 @@ export default function Specialty() {
         Meringue and an incredible variety of dynamic Latin dance music with vocals in Spanish
         and/or English. Our <span className="name">KINGS OF KLEZMER</span> band is one of the
         hottest and most sought-after bands for classic and vibrant Eastern European Klezmer sounds
-        and our <span className="name">KINGS OF DIXIELAND</span> and{" "}
+        and our <span className="name">KINGS OF DIXIELAND</span> and{' '}
         <span className="name">CARIBBEAN KINGS</span> band regularly appear at a variety of indoor
         and outdoor special events. We also offer groups that specialize in Greek, Polish, French,
         Italian, Cuban, Brazilian, Irish, Jewish and a variety of Middle Eastern music plus Cajun,
@@ -20,10 +20,12 @@ export default function Specialty() {
       </p>
       <p>
         We also provide a wide range of other entertainment that is ideally suited for all kinds of
-        private social and corporate events. Consult the list to the right to get an overview of
-        some of our more popular offerings. Please
-        <a href="mailto:LKingMusic@aol.com">contact us</a> for more ideas, information and
-        additional possibilities for your event.
+        private social and corporate events. Consult the list below to get an overview of some of
+        our more popular offerings. Please{' '}
+        <a className="rose" href="mailto:LKingMusic@aol.com">
+          contact us
+        </a>{' '}
+        for more ideas, information and additional possibilities for your event.
       </p>
       <div className="squiggle" />
       <div className="squiggle" />

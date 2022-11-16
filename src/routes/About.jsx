@@ -1,5 +1,5 @@
-import grandPiano from "/images/grand-piano.jpg";
-import headshot from "/images/home-headshot.jpeg";
+import grandPiano from '/images/grand-piano.jpg';
+import headshot from '/images/home-headshot.jpeg';
 
 export default function About() {
   return (
@@ -36,29 +36,29 @@ function createItem(el) {
 }
 
 const servicesList = [
-  "Bands and Orchestras",
-  "Classical Groups",
-  "Jazz Bands",
-  "String Trios and Quartets",
-  "Pianists and Harpists",
-  "Latin, Salsa and Meringue",
-  "Klezmer",
-  "Musical Revues",
-  "Comedy Acts",
-  "Theme Parties",
-  "Celebrity Speakers",
-  "DJs",
-  "Karaoke",
-  "Casinos and Other Games/Activities",
-  "Dancers",
+  'Bands and Orchestras',
+  'Classical Groups',
+  'Jazz Bands',
+  'String Trios and Quartets',
+  'Pianists and Harpists',
+  'Latin, Salsa and Meringue',
+  'Klezmer',
+  'Musical Revues',
+  'Comedy Acts',
+  'Theme Parties',
+  'Celebrity Speakers',
+  'DJs',
+  'Karaoke',
+  'Casinos and Other Games/Activities',
+  'Dancers',
 ];
 
 const clientsList = [
-  "Calvin Klein Cosmetics",
-  "CBS News",
-  "Hertz Corporation",
-  "JP Morgan Chase",
-  "NYU Stern School of Business",
-  "Pfizer Pharmaceuticals",
-  "The Real Estate Board of NY",
+  'Calvin Klein Cosmetics',
+  'CBS News',
+  'Hertz Corporation',
+  'JP Morgan Chase',
+  'NYU Stern School of Business',
+  'Pfizer Pharmaceuticals',
+  'The Real Estate Board of NY',
 ];
