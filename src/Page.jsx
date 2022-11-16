@@ -1,10 +1,10 @@
-import { useLocation } from "react-router-dom";
-import sidebarFade from "/images/sidebarfade.jpg";
-import navHeadshot from "/images/nav-headshot.jpeg";
-import weddingCouple from "/images/wedding-couple.jpg";
-import { NavItem } from "./NavItem";
+import { useLocation } from 'react-router-dom';
+import sidebarFade from '/images/sidebarfade.jpg';
+import navHeadshot from '/images/nav-headshot.jpeg';
+import weddingCouple from '/images/wedding-couple.jpg';
+import { NavItem } from './NavItem';
 
-const bandOrchSubPaths = ["bands-orchestras", "top-40s", "classical", "jazz", "world", "swing"];
+const bandOrchSubPaths = ['bands-orchestras', 'top-40s', 'classical', 'jazz', 'world', 'swing'];
 
 export default function Page({ children }) {
   const { pathname } = useLocation();
@@ -24,7 +24,7 @@ export default function Page({ children }) {
       </header>
       <div className="page">
         <nav>
-          <ul>
+          <ul className={!(pathname === '/' || pathname === '/about') ? 'roseGradient' : ''}>
             <NavItem title="Home" to="" />
             <NavItem title="About Us" to="about" />
             <NavItem title="Bands & Orchestras" to="bands-orchestras" />
@@ -41,12 +41,12 @@ export default function Page({ children }) {
             <NavItem title="Weddings" to="weddings" />
             <NavItem title="Contact Us" to="contact" />
           </ul>
-          {(pathname === "/" || pathname === "/about") && (
+          {(pathname === '/' || pathname === '/about') && (
             <section className="testimonials">
               <strong>Client Testimonials</strong>
               <p>
                 Dear Larry, On behalf of Calvin Klein Cosmetics Company, I want to thank you for
-                doing such a wonderful job at our Cocktail Reception at the Metropolitan Club.{" "}
+                doing such a wonderful job at our Cocktail Reception at the Metropolitan Club.{' '}
                 <a href="/testimonials">Read more...</a>
               </p>
             </section>
@@ -58,7 +58,7 @@ export default function Page({ children }) {
         </nav>
         <div className="mainContent">
           {children}
-          {pathname !== "/contact" && (
+          {pathname !== '/contact' && (
             <>
               <div className="squiggle" />
               <div className="squiggle" />

@@ -102,6 +102,9 @@ nav > ul {
   margin: 0;
   padding: 8px 0 60px 20px;
 }
+.roseGradient {
+  background: linear-gradient(#7b1b38 75%, #5e2a39);
+}
 nav ul li {
   list-style: none;
 }
